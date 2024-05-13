@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    #jungtae {
+        margin-left: 300px
+    }
+
+    #title {
+        display: block;
+        float: left;
+        height: 150px;
+        text-align: center;
+    }
+
+    #jojo {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    #hhhh {
+        margin-left: 100px;
+    }
+
+    .container-fluid {
+        float: left;
+        display: block;
+        height: 100px;
+    }
+
+    #sea {
+        width: 550px;
+        height: 700px;
+        float: left;
+        border: 2px solid;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    #sea2 {
+        width: 550px;
+        height: 700px;
+        display: inline block;
+        border: 2px solid;
+        margin-top: 30px;
+        margin-left: 670px;
+    }
+</style>
+
+<body>
+    <nav>
+        <nav class="navbar fixed-top bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid"   >
+                <a class="navbar-brand" href="http://192.168.0.8:5500/pet/dog.html"><img src="/pet\완성 로고.png" height="80px"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="http://192.168.0.8:5500/pet/inthroduce.html" id="jungtae"><h5>소개</h5></a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="http://192.168.0.8:5500/pet/understand.html" ><h5>애완동물이해하기</H5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://192.168.0.8:5500/pet/many.html"><h5>반려견보기</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://192.168.0.8:5500/pet/ado.html"><h5>입양신청</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://192.168.0.8:5500/pet/petList.html"><h5>관심반려견</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="http://192.168.0.8:5500/pet/search.html"><h5>반려견검색</h5></a>
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+              </div>
+            </nav>
+            </nav>
+      </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <div id="sea">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox"></th>
+                        <th scope="col">사진</th>
+                        <th scope="col">견종</th>
+                        <th scope="col">나이</th>
+                    </tr>
+                </thead>
+                <tbody id="ntable">
+                    <tr>
+                        <th scope="row"></th>
+                        <td id="vovo"><img src="말티푸.jpg" width="100px" alt=""></td>
+                        <td>말티푸</td>
+                        <td>6개월</td>
+                        <td><input type="button" class="jojo" value="관심리스트 넣기" onclick="insert(this)"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><img src="시바.jpg" width="100px" alt=""></td>
+                        <td>시바견</td>
+                        <td>4개월</td>
+                        <td><input type="button" value="관심리스트 넣기" onclick="insert(this)"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><img src="파피용.png" width="100px" alt=""></td>
+                        <td>파피용</td>
+                        <td>2개월</td>
+                        <td><input type="button" value="관심리스트 넣기" onclick="insert(this)"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><img src="요크셔테리어.jpg" width="100px" alt=""></td>
+                        <td>요크셔테리어</td>
+                        <td>2개월</td>
+                        <td><input type="button" value="관심리스트 넣기" onclick="insert(this)"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+        </div>
+        <div id="sea2">
+            <table class="table" id="junn">
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox"></th>
+                        <th scope="col">사진</th>
+                        <th scope="col">견종</th>
+                        <th scope="col">나이</th>
+                    </tr>
+                </thead>
+                
+        </div>
+   
+        
+</body>
+
+</html>
+<script>
+    function insert(w) { //테이블 옮기면서 리시트 넣기 버튼 뺴고 삭제 버튼 넣는 메서드
+        let a = document.querySelector('#ntable')
+        let c = document.querySelector('#junn')
+        let junn = c.insertRow(1)
+        var newcell = junn.insertCell(0)
+        var newcell1 = junn.insertCell(1)
+        var newcell2 = junn.insertCell(2)
+        var newcell3 = junn.insertCell(3)
+        var newcell4 = junn.insertCell(4)
+        const clone = w.closest('tr')
+        const bbb = clone.cloneNode('true')
+        junn.innerHTML = bbb.innerHTML
+        junn.deleteCell(4)
+       var newcell4 = junn.insertCell(4)
+       newcell4.innerHTML='<input type="button" value="삭제" onclick="del(this)">'      
+    }
+function del(g){
+g.closest('tr').remove()
+}
+</script>
